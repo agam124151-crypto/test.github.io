@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <style>
+    body { font-family: Arial; margin: 0; }
+    .container { padding: 40px; max-width: 1000px; margin: auto; }
+    .hero { text-align: center; padding: 80px 20px; background: #f5f7fb; }
+    .hero h1 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; color: #555; }
+    .btn { background: black; color: white; padding: 12px 20px; text-decoration: none; display: inline-block; margin-top: 20px; }
+    .section { padding: 60px 20px; }
+    .grid { display: flex; gap: 20px; }
+    .card { flex: 1; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+    nav { padding: 15px 20px; border-bottom: 1px solid #eee; }
+  </style>
+</head>
 
-    <!-- Navigation -->
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a> |
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-    </nav>
+<body>
 
-    <hr>
+<nav>
+  <a href="{{ '/' | relative_url }}">Home</a> |
+  <a href="{{ '/about/' | relative_url }}">About</a>
+</nav>
 
-    <!-- THIS IS THE KEY PART -->
-    {{ ---
-layout: default
-title: About
----
+{{ content }}
 
-# About Page
-This is a custom page. }}
-
-  </body>
+</body>
 </html>
