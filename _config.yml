@@ -1,2 +1,4 @@
 title: My Site
 theme: minima
+header_pages:
+  - about.md
