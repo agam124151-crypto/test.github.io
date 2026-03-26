@@ -1,5 +1,5 @@
-baseurl: "/test.github.io"
 title: My Site
 theme: minima
+baseurl: "/test.github.io"
 header_pages:
   - about.md
