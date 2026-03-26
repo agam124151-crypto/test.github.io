@@ -1,3 +1,4 @@
+baseurl: "/test.github.io"
 title: My Site
 theme: minima
 header_pages:
